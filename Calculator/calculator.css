@@ -1,0 +1,66 @@
+#CalBox {
+	height: 370px;
+	width:460px; 
+	padding-bottom:10px;
+	background:#FDFDFD; 
+	border-radius:5px; 
+	position:absolute; 
+	left:50%; top:50%; 
+	margin-left:-230px; 
+	margin-top:-225px; 
+	box-shadow:0px 0px 10px rgba(0,0,0,0.8),0px 0px 10px rgba(0,0,0,0.5) inset; 
+	-webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.8),0px 0px 10px rgba(0,0,0,0.5) inset; 
+	background:#F9F9F9; 
+	overflow:hidden 
+}
+body {
+	background-image: url(imgs/bg.jpg);
+	background-position: center;
+	background-attachment: fixed;
+}
+p {
+	height:82px; 
+	margin:10px 7px 0px; 
+	border-radius:5px; 
+	border:1px solid #64655F; 
+	box-shadow:0px 5px 2px rgba(157,157,145,0.8) inset; 
+	-webkit-box-shadow:0px 5px 2px rgba(157,157,145,0.8) inset; 
+	outline:none; 
+	background:#FCFDEB; 
+	text-align:right; 
+	font-family:"微软雅黑"; 
+	font-size:40px; 
+	padding:0px 10px;
+}
+
+ul {
+	margin:0px 7px 0px; 
+	padding: 0px;
+	background-color: rgb(247, 247, 247);
+	font: bold 13pt Helvetica;
+}
+
+li {
+	padding-top: 20px;
+	list-style:none; 
+	display: inline-block;
+	width:74px; 
+	height:34px; 
+	text-align:center; 
+	border:1px solid #8B8B8B; 
+	border-radius:5px; 
+	float:left; 
+	margin:12px 6px 0px;
+}
+
+li:hover {
+	background-color: rgb(207, 207,207);
+}
+
+li:active {
+	background-color: rgb(184, 184, 184);
+	transform: scale(0.97, 0.97);
+}
+#oper {
+	font: normal 11pt 微软雅黑, Helvetica;
+}

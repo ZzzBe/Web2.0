@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="description" content="首页"/>
+    <link href="css/indexpage.css" type="text/css" rel="stylesheet"/>
+    <title>IndexPage of pie</title>
+</head>
+<body>
+    <div id = "header">
+        <h1>Would you like some Lemon meringue pie</h1>
+    </div>
+    <hr>
+    <div class="focus">
+    <div class="focusbox">         
+        <div class="focusimg">
+            <ul class="fimglist clearfix">
+                <li><a href="pie.html" target = "_blank"><img src="images/pie1.jpg" alt="Pie"></a></li>
+                <li><a href="pie.html" target = "_blank"><img src="images/pie2.jpg" alt="Pie"></a></li>
+                <li><a href="pie.html" target = "_blank"><img src="images/pie3.jpg" alt="Pie"></a></li>
+                <li><a href="pie.html" target = "_blank"><img src="images/pie4.jpg" alt="Pie"></a></li>
+                <li><a href="pie.html" target = "_blank"><img src="images/pie5.jpg" alt="Pie"></a></li>
+                <li><a href="pie.html" target = "_blank"><img src="http://i4.xiachufang.com/image/620/425163b29efa11e38844b8ca3aeed2d7.jpg"  alt="Pie"></a></li>
+                <li><a href="pie.html" target = "_blank"><img src="http://i5.xiachufang.com/image/600/873d2ae0a32a11e38844b8ca3aeed2d7.jpg" alt="Pie"></a></li>
+            </ul>
+        </div> 
+        <div class="focustool">
+            <ul class="ftoollist clearfix">
+                <li class="on"><img src="images/pie1.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+                <li><img src="images/pie2.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+                <li><img src="images/pie3.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+                <li><img src="images/pie4.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+                <li><img src="images/pie5.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+                <li><img src="http://i4.xiachufang.com/image/620/425163b29efa11e38844b8ca3aeed2d7.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+                <li><img src="http://i5.xiachufang.com/image/600/873d2ae0a32a11e38844b8ca3aeed2d7.jpg" alt="Pie"><p class="imgname">Pie</p><p class="imgshortcat">Lemon Meringue Pie</p></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <br />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        jQuery.noConflict();
+        jQuery(document).ready(function($){
+            $(".guidelist li").hover(
+                function () {
+                    $(this).attr("class", "mouseon");
+                },
+                function () {
+                    $(this).attr("class", "mouseout");
+                }
+            );
+            $(".ftoollist li").mouseover(function(){
+                $(this).siblings().removeClass("on");
+                $(this).addClass("on");
+                var preNumber=$(this).prevAll().size();
+                $(".fimglist li").removeClass("onpre");
+                $(".fimglist li:nth-child("+preNumber+")").addClass("onpre");
+                var margin = 990;
+                margin = margin *preNumber; 
+                margin = margin * -1;
+                $(".fimglist").stop().animate({marginLeft: margin + "px"}, {duration: 500});
+            });
+        });
+    </script>
+    <div id = "footer">
+        <p>
+            <strong><u><a href="pie.html" target = "_blank">Lemon meringue pie</a></u></strong> is a type of baked pie, usually served for dessert, made with a crust usually made of shortcrust pastry, lemon custard filling and a fluffy meringue topping. Lemon meringue pie is prepared with a bottom pie crust, with the meringue directly on top of the lemon filling. No upper crust is used, as in a cherry pie.
+        
+        </p>
+    </div>
+    <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+    </div>
+</body>
+</html>
