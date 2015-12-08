@@ -1,0 +1,118 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Century Gothic", Arial, Futura, Verdana, sans-serif;
+}
+h1, h2 {
+	font-size: 31px;
+	text-align: center;
+	font-weight: normal;
+}
+h2 {
+	font-size: 26px;
+}
+#imformation{
+	height: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+}
+#maze_overview{
+	position: relative;
+	height: 310px;
+	width: 500px;
+	margin-left: 30%;
+	cursor: pointer;
+}
+#guide{
+	width: 600px;
+	margin-left: 25%;
+	font-weight: bold;
+}
+#example{
+	height: 25px;
+	width: 100px;
+	margin-left: 45%;
+	border-color: black;
+	border-style: solid;
+	background-color: #EEEEEE;
+	border-width: 1px;
+}
+#left_up_wall{
+	position: absolute;
+	height: 200px;
+	width: 145px;
+	border-color: black;
+	border-style: solid;
+}
+#right_up_wall{
+	position: absolute;
+	height: 200px;
+	width: 145px;
+	right: 0px;
+	border-color: black;
+	border-style: solid;
+}
+#up_wall{
+	position: absolute;
+	left: 146px;
+	height: 50px;
+	width: 208px;
+	border-color: black;
+	border-style: solid none solid none;
+}
+#down_wall{
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	width: 500px;
+	border-color: black;
+	border-style: solid;
+}
+#middle_wall{
+	position: absolute;
+	bottom: 51px;
+	left: 200px;
+	height: 160px;
+	width: 100px;
+
+	border-color: black;
+	border-style: solid;
+	border-bottom: none;
+}
+#start, #end{
+	position: absolute;
+	bottom: 54px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	font-size: 28pt;
+	font-weight: bolder;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+#start{
+	background-color:#82FF7A;
+}
+#end{
+	background-color:#8787FF;
+	right: 0px;
+}
+#detect_cheat{
+	height: 54px;
+	width: 54px;
+	position: absolute;
+	bottom: 52px;
+	right: 50px;
+}
+.wall{
+	background-color: #EEEEEE;
+	border-width: 1px;
+}
+.red_wall{
+	background-color: red;
+	border-width: 1px;
+	cursor: default;
+}
